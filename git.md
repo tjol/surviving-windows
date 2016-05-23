@@ -40,7 +40,12 @@ The *can* be set on a per-repository basis. For particular file types, it can al
 enforced in `.gitattributes`, for example:
 
     $ cat .gitattributes
-    *.py eof=lf
+    *.py text eol=lf
+    *.m text eol=lf
+    *.mat binary
+
+Adding a `.gitattributes` file is probably always a good idea when Windows is involved
+anywhere nearby, actually.
 
 More details can be found [in the docs](https://help.github.com/articles/dealing-with-line-endings/).
 
